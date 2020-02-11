@@ -1,0 +1,47 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>夹具流动</title>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <link href="../Content/flow/nav.css" rel="stylesheet" type="text/css" />
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <div class="flow-whole row">
+        <div class="side-menu-in col-md-2">
+       
+            <ul id="main-nav" class="nav nav-tabs nav-stacked list-group">
+
+                <li class="flow-label " style="font-size:20px;  margin-bottom: 10px;">正常出入库</li>
+                <li class="list-group-item">@Html.ActionLink("  夹具出库    >", "UsualFlowOut", "Flow")</li>
+                <li class="list-group-item">@Html.ActionLink("  夹具入库    >", "UsualFlowIn", "Flow")</li>
+
+                <li class="flow-label " style="font-size:20px;   margin-bottom: 10px; margin-top:30px">临时出入库</li>
+                <li class="list-group-item">@Html.ActionLink("  夹具出库    >", "TempFlowOut", "Flow")</li>
+                <li class="list-group-item">@Html.ActionLink("  夹具入库    >", "TempFlowIn", "Flow")</li>
+            </ul> 
+        </div>
+
+        <div class="flow-page col-md-9">
+
+            <div class="container">
+                @RenderBody()
+            </div>
+        </div>
+    </div>
+
+
+
+</body>
+
+</html>

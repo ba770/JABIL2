@@ -1,0 +1,60 @@
+﻿@{
+    Layout = "~/Views/Shared/_flow.cshtml";
+}
+    
+@{
+    ViewBag.Title = "Flow";
+}
+
+    <div class="flow">
+        <div class="flow-tittle">
+            <span class="glyphicon glyphicon-th-list" aria-hidden="true"></span>
+            <label class="tittle">正常出库记录</label>
+        </div>
+
+        <div class="flow-form">
+            <div class="input-group">
+                <span class="record-label">领用人姓名：</span>
+                <input type="text" class="form-control" placeholder="请输入领用人姓名">
+            </div>
+            <br />
+
+            <div class="input-group">
+                <span class="record-label">操作人姓名：</span>
+                <input type="text" class="form-control" placeholder="请输入操作人姓名">
+            </div>
+            <br />
+
+            <div class="input-group">
+                <span class="record-label">夹具代码：</span>
+                <input type="text" class="form-control" placeholder="请输入夹具代码">
+            </div>
+            <br />
+
+            <div class="input-group">
+                <span class="record-label">产线名称（夹具使用地）：</span>
+                <input type="text" class="form-control" placeholder="请输入生产线名称">
+            </div>
+            <br />
+
+            <div class="input-group">
+                <span class="record-label">领用时间：</span>
+                <input type="datetime-local" class="form-control">
+            </div>
+            <br />
+
+
+            <div class="input-group">
+                <span class="record-label">备注：</span>
+                <textarea class="form-control" rows="5" cols="20"></textarea>
+            </div>
+
+        </div>
+
+        <div class="submit">
+            <button class="btn">提交</button>
+        </div>
+
+
+    </div>
+

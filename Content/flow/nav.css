@@ -1,0 +1,100 @@
+﻿
+
+/*表单整体*/
+.flow {
+    /*盒模型*/
+}
+
+.record-label {
+    /*字体*/
+    width:200px;
+    font-size: 16px;
+    color: #565454;
+    font-weight:400;
+    /*盒模型*/
+    display: block;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.input-group{
+    padding-left:2px;
+    width:100%;
+}
+
+.input-group .form-control {
+    width: 50%;
+    padding-left: 5px;
+    border: 1px solid #ddd;
+
+    position: relative;
+    z-index: 2;
+    float: left;
+    margin-bottom: 0;
+    /*样式*/
+    border-radius: 5px;
+    height: 35px;
+}
+
+.flow-whole {
+    margin-top: 10px;
+
+}
+.flow-page {
+    /*盒模型*/
+    margin-top: 60px;
+    padding-bottom:60px;
+    background-color: white;
+    /*样式*/
+    border-radius:8px;
+}
+
+
+.side-menu-in {
+
+    margin-top: 60px;
+    margin-right: 12px;
+    background-color: #f1efef;
+    padding-top: 20px;
+    padding-bottom: 30px;
+    border-radius: 8px;
+}
+
+.list-group-item {
+    font-family: YouYuan;
+    font-size: 18px;
+}
+
+.flow-label {
+    display: block;
+    width: 100%;
+    color: black;
+    font-family:YouYuan;
+    font-size: 20px;
+}
+
+.flow-tittle {
+    font-family: YouYuan;
+    font-weight: bold;
+    font-size: 25px;
+    color: #286090;
+    padding: 20px 100px 5px 5px;
+    border-bottom:2px solid #ddd;
+    margin-right:300px;
+}
+
+.tittle {
+    width: 200px;
+}
+.flow-page col-md-9{
+    border:2px groove #ddd;
+}
+
+.flow-form{
+    margin:20px 100px 20px 40px;
+}
+
+.submit {
+    margin: 20px 100px 20px 40px;
+    padding-left:100px;
+}

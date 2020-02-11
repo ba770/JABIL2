@@ -1,0 +1,42 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>@ViewBag.Title - 我的 ASP.NET 应用程序</title>
+
+
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+</head>
+<body style="background-image:url('../../Content/imags/background.jpg'); background-repeat:repeat-x; background-size:cover">
+    <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                @Html.ActionLink("JABIL Fixture TMS", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+            </div>
+
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li>@Html.ActionLink("首页", "Index", "Home")</li>
+                    <li>@Html.ActionLink("夹具流动", "UsualFlowOut", "Flow")</li>  <!--直接跳到正常出库-->
+                    <li>@Html.ActionLink("维护报废", "Maintain", "Home")</li>
+                    <li>@Html.ActionLink("数据管理", "Data", "Home")</li>
+                    <li>@Html.ActionLink("夹具定位", "Location", "Home")</li>
+                    <li>@Html.ActionLink("用户管理", "UserManage", "Home")</li>
+                    <li class="account">@Html.ActionLink("账户", "Account", "Home")</li>
+                </ul>
+            </div>
+         </div>
+    </div>
+
+    <div class="container body-content" >
+        @RenderBody()
+    </div>
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+</body>
+</html>
